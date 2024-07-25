@@ -1,4 +1,4 @@
-import { Facebook, Twitter } from 'lucide-react'
+import { Facebook, Linkedin, Twitter, Youtube } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -13,6 +13,13 @@ const Footer = () => {
       <a href='#' target='_blank' className='h-8 w-8 rounded-md text-primary hover:bg-primary/50 hover:text-background flex justify-center items-center'>
         <Twitter className='h-6 w-6' />
       </a>
+      <a href='#' target='_blank' className='h-8 w-8 rounded-md text-primary hover:bg-primary/50 hover:text-background flex justify-center items-center'>
+        <Youtube className='h-6 w-6' />
+      </a>
+      <a href='#' target='_blank' className='h-8 w-8 rounded-md text-primary hover:bg-primary/50 hover:text-background flex justify-center items-center'>
+        <Linkedin className='h-6 w-6' />
+      </a>
+
     </div>
   </div>
   )
