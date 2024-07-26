@@ -13,8 +13,9 @@ const Home = () => {
     <div className='h-full w-full flex justify-center items-center'>
     <Carousel>
   <CarouselContent>
-    <CarouselItem><img src='https://blog.grabon.in/wp-content/uploads/2021/07/Online-Grocery-Stores-in-india.jpg' alt='slide1'></img></CarouselItem>
+    
     <CarouselItem>...</CarouselItem>
+    <CarouselItem><img src='https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250923_400.jpg?tr=w-1920,q=80' alt='slide2'></img></CarouselItem>
     <CarouselItem>...</CarouselItem>
   </CarouselContent>
   <CarouselPrevious />

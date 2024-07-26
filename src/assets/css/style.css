@@ -60,7 +60,7 @@
   }
 }
 .active{
-  color:darkslategray;
+  color:rgb(228, 33, 98);
 }
 
 @layer base {
