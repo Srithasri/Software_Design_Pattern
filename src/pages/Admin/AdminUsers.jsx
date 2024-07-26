@@ -1,3 +1,16 @@
+import React, { useState } from 'react'
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+
+import { BellRing, Check, Edit, Plus, TrashIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -26,46 +39,41 @@ const AdminUsers = () => {
   const [open, setOpen] = useState(false)
   const invoices = [
     {
-      invoice: "INV001",
-      paymentStatus: "Paid",
-      totalAmount: "$250.00",
-      paymentMethod: "Credit Card",
+      User: "Sritha",
+      Password: "*****",
+      Email: "sri@gmail.com",
+      
     },
     {
-      invoice: "INV002",
-      paymentStatus: "Pending",
-      totalAmount: "$150.00",
-      paymentMethod: "PayPal",
+      User: "Sri Varsha",
+      Password: "*****",
+      Email: "srivarsha@gmail.com",
+      
     },
     {
-      invoice: "INV003",
-      paymentStatus: "Unpaid",
-      totalAmount: "$350.00",
-      paymentMethod: "Bank Transfer",
+      User: "Susmitha",
+      Password: "*****",
+      Email: "susmitha@gmail.com",
     },
     {
-      invoice: "INV004",
-      paymentStatus: "Paid",
-      totalAmount: "$450.00",
-      paymentMethod: "Credit Card",
+      User: "Sritha",
+      Password: "*****",
+      Email: "sri@gmail.com",
     },
     {
-      invoice: "INV005",
-      paymentStatus: "Paid",
-      totalAmount: "$550.00",
-      paymentMethod: "PayPal",
+      User: "Sritha",
+      Password: "*****",
+      Email: "sri@gmail.com",
     },
     {
-      invoice: "INV006",
-      paymentStatus: "Pending",
-      totalAmount: "$200.00",
-      paymentMethod: "Bank Transfer",
+      User: "Sritha",
+      Password: "*****",
+      Email: "sri@gmail.com",
     },
     {
-      invoice: "INV007",
-      paymentStatus: "Unpaid",
-      totalAmount: "$300.00",
-      paymentMethod: "Credit Card",
+      User: "Sritha",
+      Password: "*****",
+      Email: "sri@gmail.com",
     },
   ]
   return (
@@ -81,20 +89,19 @@ const AdminUsers = () => {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[100px]">Invoice</TableHead>
-                <TableHead>Status</TableHead>
-                <TableHead>Method</TableHead>
-                <TableHead >Amount</TableHead>
+                <TableHead className="w-[100px]">User</TableHead>
+                <TableHead>Password</TableHead>
+                <TableHead>Email</TableHead>
+                
                 <TableHead className="flex justify-center ">Actions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {invoices.map((invoice) => (
                 <TableRow key={invoice.invoice}>
-                  <TableCell className="font-medium">{invoice.invoice}</TableCell>
-                  <TableCell>{invoice.paymentStatus}</TableCell>
-                  <TableCell>{invoice.paymentMethod}</TableCell>
-                  <TableCell >{invoice.totalAmount}</TableCell>
+                  <TableCell className="font-medium">{invoice.User}</TableCell>
+                  <TableCell>{invoice.Password}</TableCell>
+                  <TableCell>{invoice.Email}</TableCell>
                   <TableCell>
                     <span className='w-full h-full flex justify-center items-center gap-3'>
                       <Edit className='h-8 w-8 p-1 text-blue-500 cursor-pointer hover:bg-blue-500 hover:text-background rounded-md' />

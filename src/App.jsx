@@ -11,6 +11,9 @@ import Register from "./pages/Web/Register";
 import Notfound from "./pages/Web/Notfound";
 import AdminDashboard from "./pages/Admin/AdminDashboard";
 import Adminlayout from "./layout/Adminlayout";
+import AdminUsers from "./pages/Admin/AdminUsers";
+import Userlayout from "./layout/Userlayout";
+import UserDashboard from "./pages/User/UserDashboard";
 export default function App() {
     return (
     
@@ -24,11 +27,16 @@ export default function App() {
           <Route path='/register' element={<Register/>}/>
           <Route path='*' element={<Notfound/>}/>
         </Route>
-        
+        <Route element={<Userlayout/>}>
+        <Route path='/users/dashboard' element={<UserDashboard/>}/>
+        </Route>
 
-         <Route element={<Adminlayout />}>
-         <Route path='/admin/dashboard' element={<AdminDashboard />} />
-          </Route>
+         
+        <Route element={<Adminlayout />}>
+                        <Route path='/admin/dashboard' element={<AdminDashboard />} />
+                        <Route path='/admin/users' element={<AdminUsers />} />
+                    </Route>
+
 
         </Routes>
         </BrowserRouter>
