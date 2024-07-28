@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { LayoutDashboard, Cog, Mail, Users, Power, ShoppingCart, Package, BarChart, Heart } from 'lucide-react'
 import { Button } from '../ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
@@ -7,23 +7,23 @@ const UserLeftbar = () => {
 
     const AdminLinks = [
         {
-            title: 'Dashboard',
-            link: '/user/dashboard',
-            icon: LayoutDashboard
+            title: 'Profile',
+            link: '/users/dashboard',
+            icon: Users
         },
         {
             title: 'Your Orders',
-            link: '/user/orders',
+            link: '/users/orders',
             icon: Package
         },
         {
             title: 'Cart',
-            link: '/user/cart',
+            link: '/users/cart',
             icon: ShoppingCart
         },
         {
             title: 'Favourites',
-            link: '/user/favourite',
+            link: '/users/favourite',
             icon: Heart
         }
     ]
@@ -47,12 +47,12 @@ const UserLeftbar = () => {
                 }
             </div>
             <div className='h-[5%] w-full flex flex-col justify-center items-center'>
-                {/* <Button className='p-5  bg-red-500/5 hover:bg-red-500/10 font-bold  w-full'>
-                    <span className='flex flex-row items-center justify-start h-full w-full gap-2 text-red-500'>
-                        <Power size={20} /> Logout
-                    </span>
-                </Button> */}
-            </div>
+            <Button className='p-5  bg-red-500/5 hover:bg-red-500/10 font-bold  w-full'>
+                <span className='flex flex-row items-center justify-start w-full gap-2 text-red-500'>
+                    <Power size={20} /> <Link to={'/'}>Logout</Link>
+                </span>
+            </Button>
+        </div>
 
         </div>
     )

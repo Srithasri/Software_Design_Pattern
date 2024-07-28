@@ -69,10 +69,10 @@ const AdminUsers = () => {
   return (
     <div className='m-1 p-4'>
       <Card className='shadow-sm shadow-primary'>
-        <CardHeader className='w-full flex flex-row justify-between items-center'>
+        <CardHeader className='w-full flex flex-row justify-between items-center '>
           <CardTitle>Users</CardTitle>
-          <Button onClick={() => setOpen(!open)}>
-            <Plus className='h-10 w-10 mr-2' /> Add
+          <Button onClick={() => setOpen(!open)} className='bg-green-600'>
+            <Plus className='h-10 w-10 mr-2 bg-green-600' />Add
           </Button>
         </CardHeader>
         <CardContent>
@@ -137,8 +137,8 @@ const AdminUsers = () => {
             </div>
           </div>
           <SheetFooter className='flex flex-col flex-1'>
-            <Button className='w-1/2 outline bg-red-400/90 hover:bg-red-400' onClick={() => setOpen(!open)}>Cancel</Button>
-            <Button type="submit" className='w-1/2'>Save changes</Button>
+            <Button className='w-1/2 outline bg-red-500 hover:bg-red-400' onClick={() => setOpen(!open)}>Cancel</Button>
+            <Button type="submit" className='w-1/2'onClick={() => setOpen(!open)}>Save changes</Button>
           </SheetFooter>
         </SheetContent>
       </Sheet>

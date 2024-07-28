@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Login2 = () => {
   return (
     <div className="min-h-screen flex items-center justify-center ">
       <div className=" p-8 rounded-lg shadow max-w-md w-full shadow-primary/50">
@@ -34,19 +34,14 @@ const Login = () => {
           <button
             type="submit"
             className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/80"
-          ><a href='/users/dashboard'>Login</a>
+          ><Link to='/admin/dashboard'>Login</Link>
             
           </button>
         </form>
-        <div className="mt-4 text-sm text-center">
-          Don't have an account? <a href="/register" className="text-green-600 hover:text-primary/80">Sign up</a>
-        </div>
-        <div className="mt-4 text-sm text-center">
-          Login as Admin?<Link to='/adminlogin'> <p  className="text-green-600 hover:text-primary/80" >Login</p></Link>
+        
       </div>
-    </div>
     </div>
   );
 };
 
-export default Login;
+export default Login2;

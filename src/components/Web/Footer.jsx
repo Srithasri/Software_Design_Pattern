@@ -7,23 +7,26 @@ const Footer = () => {
     <footer className="bg-gray-100 py-10 text-black shadow-lg shadow-gray-500 overflow-hidden">
       <div className="footer-content max-w-[1200px] mx-auto flex flex-wrap justify-between">
         <div className="footer-section w-full sm:w-1/3 text-black text-2xl mb-4 sm:mb-0 text-base leading-relaxed">
-          <h2>About Us</h2>
-          <p>Welcome to Your Personal Store, your one-stop destination for unique and thoughtful gifts. Explore our curated collection designed to make every occasion special.</p>
+          <h2 className='p-1'><Link to='/'>About Us</Link></h2>
+          <h2 className='p-1'><Link to='/'>Privacy Policy</Link></h2>
+          <h2 className='p-1'><Link to='/'>Terms & Conditions</Link></h2>
+          <h2 className='p-1'><Link tO='/'>SS Blog</Link></h2>
+          <h2 className='p-1'><Link to='/'>NewsLetter</Link></h2>
         </div>
-        <div className="footer-section w-full sm:w-auto mb-4 sm:mb-0">
+        <div className="footer-section w-full sm:w-1/3 text-black text-2xl mb-4 sm:mb-0 text-base leading-relaxed">
           <h2>Quick Links</h2>
           <ul className="list-none p-0">
-            <li className="text-black no-underline"><Link to='/'>Home</Link></li>
-            <li className="text-black no-underline"><Link to='/shop'>Shop</Link></li>
-            <li className="text-black no-underline"><Link to='/occasions'>Occasions</Link></li>
-            <li className="text-black no-underline"><Link to='/contact'>Contact Us</Link></li>
+            <li className="text-black no-underline p-1"><Link to='/snacks'>Snacks</Link></li>
+            <li className="text-black no-underline p-1"><Link to='/fruits'>Fruits</Link></li>
+            <li className="text-black no-underline p-1"><Link to='/vegetables'>Vegetables</Link></li>
+            <li className="text-black no-underline p-1"><Link to='/meat'>Meat</Link></li>
           </ul>
         </div>
-        <div className="footer-section w-full sm:w-1/3 mt-4 sm:mt-0">
-          <h2>Contact Us</h2>
-          <p>Email: info@yourgiftshop.com</p>
-          <p>Phone: 7880563295</p>
-          <p>Address: Coimbatore</p>
+        <div className="footer-section w-full sm:w-auto mb-4 sm:mb-0">
+          <h2><Link to='/'>Contact Us</Link></h2>
+          <p className='p-1'>Email: smartshopp@gamil.com</p>
+          <p className='p-1'>Phone: 8148875532</p>
+          <p className='p-1'>Address: Coimbatore</p>
           <div className="flex gap-2 mt-2">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-black">
               <Instagram className='h-6 w-6' />

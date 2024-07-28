@@ -1,7 +1,4 @@
 import React  from "react";
-// import { Button } from "@/components/ui/button"
-// import { ModeToggle } from './components/mode-toggle'
-// import {GridPattern} from './components/magicui/animated-grid-pattern'
 
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Weblayout from "./layout/Weblayout";
@@ -13,15 +10,19 @@ import AdminDashboard from "./pages/Admin/AdminDashboard";
 import Adminlayout from "./layout/Adminlayout";
 import AdminUsers from "./pages/Admin/AdminUsers";
 import Userlayout from "./layout/Userlayout";
-import UserDashboard from "./pages/User/UserDashboard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WebLayout2 from "./layout/WebLayout2";
 import FruitList from "./pages/Web/FruitList";
 import VegetableList from "./pages/Web/Vegetables";
-import Tea from "./pages/Web/Households";
 import Meat from "./pages/Web/Meat";
 import Chocalates from "./pages/Web/Chocalates";
 import Households from "./pages/Web/Households";
+import Cart from "./pages/User/Cart";
+import Favourites from "./pages/User/Favourites";
+import Profile from "./pages/User/Profile";
+import AdminProducts from "./pages/Admin/AdminProducts";
+import Orders from "./pages/User/Orders";
+import Login2 from "./pages/Web/Login2";
 export default function App() {
     return (
     
@@ -31,18 +32,17 @@ export default function App() {
           <Route element={<Weblayout/>}>
           <Route path='/' element={<Home/>}/>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/adminlogin' element={<Login2/>}/>
         
           <Route path='/register' element={<Register/>}/>
           <Route path='*' element={<Notfound/>}/>
-        </Route>
-        <Route element={<Userlayout/>}>
-        <Route path='/users/dashboard' element={<UserDashboard/>}/>
         </Route>
 
          
         <Route element={<Adminlayout />}>
                         <Route path='/admin/dashboard' element={<AdminDashboard />} />
                         <Route path='/admin/users' element={<AdminUsers />} />
+                        <Route path='/admin/products' element={<AdminProducts />} />
                     </Route>
                     <Route element={<WebLayout2/>}>
                         <Route path='/fruits' element={<FruitList />} />
@@ -52,11 +52,16 @@ export default function App() {
                          <Route path='/meat' element={<Meat/>}/>
                         
                     </Route>
-
-
+                    <Route element={<Userlayout/>}>
+                        <Route path='/users/dashboard' element={<Profile/>}/>
+                        <Route path='/users/orders' element={<Orders/>}/>
+                        <Route path='/users/cart' element={<Cart/>}/>
+                        <Route path='/users/favourite' element={<Favourites/>}/>
+                    
+                        
+                    </Route>
         </Routes>
         </BrowserRouter>
-
       </>
           );
   }

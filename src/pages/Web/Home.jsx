@@ -18,12 +18,16 @@ const Home = () => {
       
          </div>
       <Nav/>
-        <div className='w-full flex justify-center items-center'>
-   <h1 className='p-10 '><b>TOP OFFERS</b></h1>
-      </div>
-       
       <div>
-      <div className='w-full p-8'>
+        {/* <div className='text-3xl font-bold mb-4 text-center text-green-600'>
+       
+   <h1>TOP OFFERS</h1>
+      </div> */}
+      <div className="bg-white p-6 rounded-lg  max-w-4xl mx-auto my-8">
+      <h2 className="text-3xl font-bold text-center text-green-600">Top Offers</h2>
+      </div>
+      <div>
+      <div className='w-full p-2'>
   <div className="flex justify-center space-x-5">
    
     <div className="max-w-xs rounded overflow-hidden shadow-lg bg-neutral-500 bg-opacity-5">
@@ -47,19 +51,27 @@ const Home = () => {
     </div>
   </div>
 </div>
-<div className=' h-20 w-full flex justify-center items-center pb-10'><b>ABOUT US</b>
-</div>
-<div className='bg-green-500  w-full flex justify-center items-center text-justify pl-60 pr-60'>
-  <div>
-<h6 className='text-font '>
-
+{/* <div className=' w-full h-[40%] flex justify-center items-center text-justify'>
+  <div className='w-[80%] h-full bg-red-500 font-serif '>
+  
 Welcome to Smart Shopp, where quality meets convenience and our customers are at the heart of everything we do. Founded in 20XX with the mission to provide fresh, affordable, and high-quality products, we have grown into a trusted community hub. Our values are centered around offering top-quality items, maintaining affordability, delivering excellent customer service, and giving back to our community. At Smart Shopp, you'll find fresh produce, delicious deli and bakery goods, high-quality meat and seafood, essential pantry staples, household items, and specialty products to cater to diverse needs. We promise to continuously improve based on your feedback, ensure a clean and welcoming environment, and provide a seamless shopping experience both in-store and online. Thank you for choosing Smart Shopp, where we look forward to serving you and being part of your daily life. Stay connected with us through social media and our newsletter for the latest updates and promotions.
-</h6>
-  </div>
+</div> */}
+<div className="bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto my-8">
+      <h2 className="text-3xl font-bold mb-4 text-center text-green-600">About Us</h2>
+      <p className="text-gray-700 text-lg text-justify mb-4">
+        Welcome to Smart Shopp, where quality meets convenience and our customers are at the heart of everything we do.
+        Founded in 20XX with the mission to provide fresh, affordable, and high-quality products, we have grown into a
+        trusted community hub. Our values are centered around offering top-quality items, maintaining affordability,
+        delivering excellent customer service, and giving back to our community. At Smart Shopp, you'll find fresh
+        produce, delicious deli and bakery goods, high-quality meat and seafood, essential pantry staples, household
+        items, and specialty products to cater to diverse needs. We promise to continuously improve based on your
+        feedback, ensure a clean and welcoming environment, and provide a seamless shopping experience both in-store and
+        online. Thank you for choosing Smart Shopp, where we look forward to serving you and being part of your daily
+        life. Stay connected with us through social media and our newsletter for the latest updates and promotions.
+      </p>
+    </div>
 </div>
-
       </div>
-      
 
   </>
   )
