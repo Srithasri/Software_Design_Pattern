@@ -55,6 +55,7 @@ const AdminDashboard = () => {
                     <div className="text-2xl font-bold">10,000,00</div>
                 </CardContent>
             </Card>
+            
         </div>
     )
 }

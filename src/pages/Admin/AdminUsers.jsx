@@ -56,7 +56,7 @@ const AdminUsers = () => {
       Email: "susmitha@gmail.com",
     },
     {
-      User: "Sritha",
+      User: "Sonali",
       Password: "*****",
       Email: "sri@gmail.com",
     },
@@ -64,17 +64,7 @@ const AdminUsers = () => {
       User: "Sritha",
       Password: "*****",
       Email: "sri@gmail.com",
-    },
-    {
-      User: "Sritha",
-      Password: "*****",
-      Email: "sri@gmail.com",
-    },
-    {
-      User: "Sritha",
-      Password: "*****",
-      Email: "sri@gmail.com",
-    },
+    }
   ]
   return (
     <div className='m-1 p-4'>

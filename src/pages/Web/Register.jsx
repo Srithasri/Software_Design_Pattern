@@ -55,12 +55,11 @@ const Register= () => {
           <button
             type="submit"
             className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/80 "
-          >
-            Sign Up
+          ><a href="/login">Sign Up</a>
           </button>
         </form>
         <div className="mt-4 text-sm text-center">
-          Already have an account? <a href="#" className="text-primary hover:text-primary/80 ">Login</a>
+          Already have an account? <a href="/login" className="text-primary hover:text-primary/80 ">Login</a>
         </div>
       </div>
     </div>
