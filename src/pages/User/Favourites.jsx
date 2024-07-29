@@ -42,9 +42,9 @@ const Favourites= () => {
 </div>
 <div class="dcard">
     <img className="sizereduce " src="https://www.shutterstock.com/shutterstock/videos/1070216050/thumb/1.jpg?ip=x480" alt="not"/>
-    <p>Approx 500g-1 Pack</p>
+    <p>126 g-(18pcs)</p>
     <h4>KitKat</h4>
-    <h3>₹181</h3>
+    <h3>₹111</h3>
     
     <input type="submit" value="Add to Cart" className="dogbtn" />
 </div>

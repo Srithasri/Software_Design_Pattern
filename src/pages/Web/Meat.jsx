@@ -40,16 +40,16 @@ const Meat = () => {
 </div>
 <div class="dcard">
     <img className="sizereduce" src="https://static.toiimg.com/thumb/imgsize-1653159,msid-73378423/73378423.jpg?width=500&resizemode=4"alt="not"/>
-    <p>500g</p>
-    <h4>Grapes-green</h4>
-    <h3>₹65.24</h3>
+    <p>900g</p>
+    <h4>Chicken-Mixed Boneless</h4>
+    <h3>₹549.24</h3>
     <input type="submit" value="Add to Cart" className="dogbtn" />
 </div>
 <div class="dcard">
     <img className="sizereduce" src="https://media.istockphoto.com/id/499602871/photo/whole-raw-chicken-with-rose-pepper-and-thyme.jpg?s=612x612&w=0&k=20&c=yXFGiy6gYsheD2CwnHGvJrQNsTwiYW99EHRN8d0YUk8="alt="not"/>
-    <p>1 kg</p>
-    <h4>Rambutan</h4>
-    <h3>₹384.25</h3>
+    <p>700-900g</p>
+    <h4>Thandoori Chicken</h4>
+    <h3>₹589.25</h3>
     <input type="submit" value="Add to Cart" className="dogbtn" />
 </div>
 </div>

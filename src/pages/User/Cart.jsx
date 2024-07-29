@@ -49,9 +49,9 @@ const Cart = () => {
 </div>
 <div class="dcard">
     <img className="sizereduce" src="https://www.hersheyland.in/content/dam/Hersheyland_India/en_in/brands/kisses/Kisses_MC_less-sugar_display.jpg?im=Resize=(392)"alt="not"/>
-    <p>1 kg</p>
+    <p>2X100g-Multipack</p>
     <h4>Hershey's Kisses</h4>
-    <h3>₹384.25</h3>
+    <h3>₹310.25</h3>
     <input type="submit" value="Add to Cart" className="dogbtn" />
 </div>
 

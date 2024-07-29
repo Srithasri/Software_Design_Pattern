@@ -79,7 +79,7 @@ const Households= () => {
 <div class="dcard">
     <img className="sizereduce" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSK3UPabk34FHoZD9MlR3ui1v9EXTKRqdWzQ&s"alt="not"/>
     <p>1 pcs</p>
-    <h4>Liquids</h4>
+    <h4>Lysol</h4>
     <h3>₹91</h3>
     <input type="submit" value="Add to Cart" className="dogbtn" />
 </div>
@@ -103,7 +103,7 @@ const Households= () => {
 <div class="dcard">
     <img className="sizereduce" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsMbiGdwcbY71b9AD4hpRdgH7GS1ZEqMenw&s"alt="not"/>
     <p>5pcs</p>
-    <h4>Arial</h4>
+    <h4>Ariel</h4>
     <h3>₹65.24</h3>
     <input type="submit" value="Add to Cart" className="dogbtn" />
 </div>
