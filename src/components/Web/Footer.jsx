@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="footer-section w-full sm:w-auto mb-4 sm:mb-0">
           <h2><Link to='/'>Contact Us</Link></h2>
-          <p className='p-1'>Email: smartshopp@gamil.com</p>
+          <p className='p-1'>Email: smartshopp@gmail.com</p>
           <p className='p-1'>Phone: 8148875532</p>
           <p className='p-1'>Address: Coimbatore</p>
           <div className="flex gap-2 mt-2">

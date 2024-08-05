@@ -60,7 +60,7 @@ Welcome to Smart Shopp, where quality meets convenience and our customers are at
       <h2 className="text-3xl font-bold mb-4 text-center text-green-600">About Us</h2>
       <p className="text-gray-700 text-lg text-justify mb-4">
         Welcome to Smart Shopp, where quality meets convenience and our customers are at the heart of everything we do.
-        Founded in 20XX with the mission to provide fresh, affordable, and high-quality products, we have grown into a
+        Founded in 2024 with the mission to provide fresh, affordable, and high-quality products, we have grown into a
         trusted community hub. Our values are centered around offering top-quality items, maintaining affordability,
         delivering excellent customer service, and giving back to our community. At Smart Shopp, you'll find fresh
         produce, delicious deli and bakery goods, high-quality meat and seafood, essential pantry staples, household
